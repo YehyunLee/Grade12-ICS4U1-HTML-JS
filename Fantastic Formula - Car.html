@@ -1,0 +1,52 @@
+<html>
+
+<body bgcolor="white">
+  <b>
+    <h1>
+      <center>Fantastic Formula<center>
+    </h1>
+  </b>
+  <center>
+    <table width=20% cellpadding=5 border=2 cellspacing=2 bgcolor="black">
+    </table>
+    <center>
+
+      <style>
+        .rectangle {
+          padding-top: 0px;
+          width: 700px;
+          height: 50px;
+          border: 2px solid #000;
+          position: relative;
+          text-align: left;
+        }
+      </style>
+
+      <br>
+      <center>
+        <div class="rectangle">
+          <center>
+            <font size="+3">
+              <center>Calculate how much oil is needed for a car<center>
+            </font>
+        </div>
+        <div id="answer"></div>
+
+        <h3 id="click box" onclick="myFunction()">
+          <center>Click <u>here</u> to calculate the oil you need.<center>
+        </h3>
+        <script>
+          function myFunction() {
+            document.getElementById("click box").style.color = "brown";
+            get_user_input = prompt("Type how long you're going to drive in km:");
+            calc_oil_need = parseInt(get_user_input) * (1 / 12.5);
+            alert("You will need " + calc_oil_need + "L in order to drive " + get_user_input + "km.");
+            document.getElementById('answer').innerHTML += `<font size="+3"><br>You will need ${calc_oil_need}L in order to drive ${get_user_input}km.</font>`;
+          }
+        </script>
+        <center>
+          <img src="Car.png">
+        </center>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+
+<body>
+  <script>
+    // Q1
+    var loopCounter;
+    for (loopCounter = 1; loopCounter <= 12; loopCounter++) {
+      document.write("12 * " + loopCounter + " = " + 12 * loopCounter + "<br>");
+    }
+
+    // Q2
+    var loopCounter;
+    var total = 0;
+    for (loopCounter = 1; loopCounter <= 3; loopCounter++) {
+      var mark = prompt("Please enter a mark...");
+      var markInt = parseInt(mark);
+      var total = parseInt(total) + parseInt(markInt);
+    }
+    document.write("<br>Your avg. mark is: " + Math.round(parseInt(total) / 3) + "<br><br>");
+
+    // Q3
+    var loopCounter;
+    var total = 0;
+    var how_many = prompt("How many times do you want to enter marks?")
+    for (loopCounter = 1; loopCounter <= how_many; loopCounter++) {
+      var mark = prompt("Please enter a mark...");
+      var markInt = parseInt(mark);
+      var total = parseInt(total) + parseInt(markInt);
+    }
+    document.write("Your avg. mark is: " + Math.round(parseInt(total) / how_many) + "<br><br>");
+
+    // Q4
+    var loopCounter;
+    var number = prompt("What multiplication table do you want to make?")
+    for (loopCounter = 1; loopCounter <= 12; loopCounter++) {
+      document.write(number + " * " + loopCounter + " = " + number * loopCounter + "<br>");
+    }
+  </script>
+</body>
+
+</html>

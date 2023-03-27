@@ -1,0 +1,57 @@
+﻿<html>
+
+<head>
+  <title>JS - Practice with Variables</title>
+</head>
+
+<body bgcolor="white">
+  <script>
+    // #1 Asks for and Displays phone number
+    var phone_number = prompt("What is your phone number?");
+    alert("Your phone number is " + phone_number);
+    document.write("<br>Q1: Your phone number is " + phone_number);
+
+    // #2 - Age in 2030
+    var age = prompt("What is your age in 2022?");
+    let calc_age = parseInt(age) + 8;
+    alert("Your age in 2030 is " + calc_age);
+    document.write("<br>Q2: Your age in 2030 is " + calc_age);
+
+    // #3 - Outputs square and cube
+    var number = prompt("Type a number.");
+    let square = number ** 2;
+    let cube = Math.pow(parseInt(number), 3);
+    alert(number + "'s square and cube are " + square + " and " + cube);
+    document.write("<br>Q3: " + number + "'s square and cube are " + square + " and " + cube);
+
+    // #4 - Currency Conversion
+    var money = prompt("How much CAD?");
+    var money = money * 0.75;
+    alert("Your converted money is " + money);
+    document.write("<br>Q4: Your converted money is " + money);
+
+    // #5 Nickers and quarters
+    var cad = prompt("Enter a Canadian dollar.");
+    let nickel = parseInt(cad) * 20;
+    let quarter = parseInt(cad) * 4;
+    alert("Nickel: " + nickel + "\nQuarter: " + quarter);
+    document.write("<br>Q5: Nickel: " + nickel + "<br>Quarter: " + quarter);
+
+    // #6 CUSTOM Question: name
+    var name = prompt("What is your name?");
+    alert("Your name is " + name);
+    document.write("<br>Q6: Your name is " + name);
+
+    // #7
+    alert("Think of any number.");
+    alert("Double the number.");
+    alert("Add 9 with result.");
+    alert("Subtract 3 with the result.");
+    alert("Divide the result by 2.");
+    alert("Subtract the number with the first number started with.");
+    alert("Your answer is 3.");
+    document.write("<br>Q7: Your answer is 3.");
+  </script>
+</body>
+
+</html>

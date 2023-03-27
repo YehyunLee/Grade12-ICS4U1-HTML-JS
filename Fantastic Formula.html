@@ -1,0 +1,51 @@
+<html>
+
+<body bgcolor="#337def">
+  <b>
+    <h1>Fantastic Formula</h1>
+  </b>
+  <table width=20% cellpadding=5 border=2 cellspacing=2 bgcolor="#fcc729">
+  </table>
+
+  <style>
+    .rectangle {
+      padding-top: 0px;
+      width: 700px;
+      height: 50px;
+      border: 2px solid #000;
+      position: relative;
+      text-align: left;
+    }
+  </style>
+
+  <br>
+  <div class="rectangle">
+    <font size="+3">Calculate how much fuel is needed for a rocket</font>
+  </div>
+  <div id="answer"></div>
+
+  <h3 id="click box" onclick="myFunction()">Click <u>here</u> to calculate the fuel need.</h3>
+  <script>
+    function myFunction() {
+      document.getElementById("click box").style.color = "#fcc729";
+      var answer_newton;
+      var answer_kg;
+      var answer;
+      var g = 6.67408 * (10 ** -11);
+      mass1 = prompt("Type a mass of planet: Ex) 6000000000000000000000000 kg");
+      mass2 = prompt("Type a mass of Spaceship: Ex) 2000000 kg");
+      radius = prompt("Type a distance between centers of planet and ship: Ex) 6450000 m")
+      alert("G; universal gravitational constant is set to 6.67408 × 10^-11 m^3 kg^-1 s^-2");
+      answer_newton = g * ((mass1 * mass2) / radius ** 2);
+      answer_kg = (g * ((mass1 * mass2) / radius ** 2)) / 9.81;
+      answer_L = [((g * ((mass1 * mass2) / radius ** 2)) / 9.81) * 0.17] * 1.28;
+      alert("Answer in newton: " + answer_newton + " N" + "\nAnswer in kg: " + answer_kg + " kg" + "\nAnswer in L: " + answer_L + " L");
+      document.getElementById('answer').innerHTML += `<font size="+3"><br>You will need at least <b><u>${Math.round(answer_L)}</u></b> L to launch a Spaceship!<br><br>Mass 1 = ${mass1} kg<br>Mass 2 = ${mass2} kg<br>Radius = ${radius} m</font>`;
+    }
+  </script>
+  <center>
+    <img src="Spaceship.png">
+  </center>
+</body>
+
+</html>

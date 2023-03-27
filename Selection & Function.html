@@ -1,0 +1,26 @@
+<script>
+  var loopCounter;
+
+  var select = prompt("Which program do you want to run?\nType: Math or English");
+
+  function math(number) {
+    document.write(number + " + " + number + " = " + parseInt(number + number));
+  }
+
+  function english(word) {
+    for (loopCounter = 1; loopCounter <= 3; loopCounter++) {
+      document.write(word)
+    }
+    return word;
+
+  }
+
+  if (select == "Math") {
+    var number = prompt("Type a number!");
+    answer = math(parseInt(number));
+  } else if (select == "English") {
+    var word = prompt("Type a word!");
+    english(word);
+    document.write(word);
+  }
+</script>

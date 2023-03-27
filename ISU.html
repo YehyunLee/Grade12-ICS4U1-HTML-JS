@@ -1,0 +1,35 @@
+<html>
+<script>
+  let now = new Date();
+  alert(now);
+
+  var userInputArray = [];
+  var sizeOfArray = 3;
+
+  for (var i=0; i<sizeOfArray; i++) {
+    userInputArray[i] = prompt("Q" + (i+1) + ". What do you learn from CPA video?"
+    );
+  }
+
+  userInputArray.sort();
+  userInputArray.reverse();
+
+  for (var i=0; i<sizeOfArray; i++) {
+    document.write(userInputArray[i] + "<br/>");
+  }
+
+  document.write("<IMG SRC='audio-video/Khan Academy" + ".png' height=100 width=100>")
+
+</script>
+
+
+
+  <video width="740" height"440" controls>
+
+    <source src="audio-video/CPA.mp4" type="video/mp4">
+  </video>
+
+  <br><audio controls>
+    <source src="audio-video/audio.mp3" type="audio/mpeg">
+  </audio>
+</html>

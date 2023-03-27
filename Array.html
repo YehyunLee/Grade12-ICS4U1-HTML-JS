@@ -1,0 +1,16 @@
+<script>
+  var userInputArray = [];
+  var sizeOfArray = 3;
+
+  for (var i=0; i<sizeOfArray; i++) {
+    userInputArray[i] = prompt("Please enter mark " + (i+1));
+  }
+
+  userInputArray.sort();
+  userInputArray.reverse();
+
+  for (var i=0; i<sizeOfArray; i++) {
+    document.write(userInputArray[i] + "<br/>");
+  }
+
+  </script>

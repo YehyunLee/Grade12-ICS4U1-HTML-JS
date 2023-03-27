@@ -1,0 +1,66 @@
+<html>
+
+<body bgcolor="#00FFFF">
+  <b>Coding Created by Yehyun.<br></b>
+  <table width=100% cellpadding=5 border=6 cellspacing=2 bgcolor="cyan">
+    <script>
+      // 1. Numeric Question
+      var age = prompt("What is monster's age?");
+      alert("Wow! The monster is " + age + " years old?!");
+
+      // 2. Mathematical Operation Question
+      var number = prompt("Type a number, computer will operate the math for you!");
+      let answer1 = number * 2;
+      let answer2 = number ** 3;
+      alert(number + " multiplied by 2 is " + answer1);
+      alert(number + " to the exponent 3 is " + answer2);
+
+      // 3. Randomly Generated Number Question
+      function randomNumber(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+      alert("Computer will randomly generate a number!");
+      var low_limit = prompt("Type your low limit.");
+      var upper_limit = prompt("Type your upper limit.");
+      let random_number = Math.round(randomNumber(parseInt(low_limit), parseInt(upper_limit)))
+      alert("Random number range from " + low_limit + " to " + upper_limit + " is " + random_number);
+
+      // 4. Naming Monster Question
+      var monster = prompt("Type the name of monster!!");
+      alert("Monster's name is set to " + monster + "!");
+
+      // 5. Favourite Food Question
+      var food = prompt("What's your favourite food?");
+      alert("Of course! " + food + " is really delicious.");
+
+      // 6. Question Using Function
+      var surface = prompt("What is the surface of Mars?");
+      alert("The surface for Mars is now set to " + surface + "!");
+
+      // 7. Lucky Number Question
+      var lucky_number = prompt("What is your lucky number?");
+      alert("I love lucky number " + lucky_number + "!");
+
+      // Paragraph for Mars JavaScript Monster
+      document.write("<br>The monster, " + monster + " with a huge bald head living on an surface of " + surface + "km Mars has about " + answer1 + " ~ " + answer2 + " legs helping him move. He is also really young since he is only at age of " +
+        age + ". He can travel almost anywhere within a matter of seconds. He also has about " + random_number + " eyes which helps him see even in the dark. He loves " + food + " and kucky number " + lucky_number + ".");
+    </script>
+  </table>
+
+  <h3 id="demo" onclick="myFunction()">Click to play a game.</h3>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").style.color = "red";
+      alert("Think of any number.");
+      alert("Double the number.");
+      alert("Add 9 with result.");
+      alert("Subtract 3 with the result.");
+      alert("Divide the result by 2.");
+      alert("Subtract the number with the first number started with.");
+      alert("Your answer is 3.");
+    }
+  </script>
+
+</body>
+
+</html>
